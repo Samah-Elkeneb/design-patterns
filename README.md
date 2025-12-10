@@ -71,13 +71,12 @@ class ReportNotification < Notification
     super("REPORT: #{message}")
   end
 end
-```
 
 # Example
-
 email = Email.new
 notif = AlertNotification.new(email)
 notif.send("Hello World")
+```
 
 ---
 
@@ -110,6 +109,7 @@ class AppConfig
   end
 end
 
+# Example
 c1 = AppConfig.instance
 c2 = AppConfig.instance
 
